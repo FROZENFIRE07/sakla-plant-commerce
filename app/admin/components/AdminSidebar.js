@@ -15,7 +15,7 @@ export default function AdminSidebar() {
   return (
     <aside className="admin-sidebar">
       <div className="admin-sidebar__brand">
-        <div className="admin-sidebar__logo">Verdant Grove</div>
+        <div className="admin-sidebar__logo">Sakla</div>
         <div className="admin-sidebar__label">Admin Portal</div>
       </div>
       <nav className="admin-sidebar__nav">

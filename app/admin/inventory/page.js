@@ -89,7 +89,7 @@ export default function AdminInventoryPage() {
                   <tr>
                     <th>Plant</th>
                     <th>Category</th>
-                    <th>Price</th>
+                    <th>Price (₹)</th>
                     <th>Stock</th>
                     <th style={{ width: '100px' }}>Actions</th>
                   </tr>
@@ -108,7 +108,7 @@ export default function AdminInventoryPage() {
                         </div>
                       </td>
                       <td style={{ textTransform: 'capitalize' }}>{plant.category.replace(/-/g, ' ')}</td>
-                      <td style={{ fontWeight: 600 }}>${plant.price.toFixed(2)}</td>
+                      <td style={{ fontWeight: 600 }}>₹{plant.price.toLocaleString('en-IN')}</td>
                       <td>{getStockBadge(plant.stock)}</td>
                       <td>
                         <div style={{ display: 'flex', gap: '6px' }}>

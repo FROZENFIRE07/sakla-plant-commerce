@@ -28,7 +28,7 @@ export default function Navbar() {
           <button className="nav-header__btn" style={{ display: 'none' }} aria-label="Menu">
             <span className="material-symbols-outlined">menu</span>
           </button>
-          <Link href="/" className="nav-header__logo">Verdant Grove</Link>
+          <Link href="/" className="nav-header__logo">Sakla</Link>
           <button className="nav-header__btn" aria-label="Search">
             <span className="material-symbols-outlined">search</span>
           </button>

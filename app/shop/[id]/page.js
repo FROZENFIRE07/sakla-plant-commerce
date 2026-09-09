@@ -7,9 +7,9 @@ import { getPlant, getPlants } from '../../../lib/db';
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const plant = getPlant(id);
-  if (!plant) return { title: 'Plant Not Found — Verdant Grove' };
+  if (!plant) return { title: 'Plant Not Found — Sakla' };
   return {
-    title: `${plant.name} — Verdant Grove`,
+    title: `${plant.name} — Sakla`,
     description: plant.description,
   };
 }
@@ -130,7 +130,7 @@ export default async function PlantDetailPage({ params }) {
               {/* Price & CTA */}
               <div className="detail-price-box">
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: 'var(--space-unit)', marginBottom: 'var(--space-stack-md)' }}>
-                  <span className="detail-price">${plant.price.toFixed(2)}</span>
+                  <span className="detail-price">₹{plant.price.toLocaleString('en-IN')}</span>
                   <span className="detail-price-unit">/ mature plant</span>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-stack-sm)' }}>

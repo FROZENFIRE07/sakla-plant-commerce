@@ -40,7 +40,7 @@ export default function AdminLoginPage() {
   return (
     <div className="login-page">
       <div className="login-card">
-        <h1 className="login-card__logo">Verdant Grove</h1>
+        <h1 className="login-card__logo">Sakla</h1>
         <p className="login-card__subtitle">Admin Portal</p>
 
         {error && (
@@ -57,7 +57,7 @@ export default function AdminLoginPage() {
               id="email"
               type="email"
               className="input-text"
-              placeholder="admin@verdantgrove.com"
+              placeholder="admin@sakla.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -87,7 +87,7 @@ export default function AdminLoginPage() {
         </form>
 
         <p style={{ textAlign: 'center', marginTop: '24px', fontSize: '12px', color: '#717976' }}>
-          Default: admin@verdantgrove.com / admin123
+          Default: admin@sakla.com / admin123
         </p>
       </div>
     </div>

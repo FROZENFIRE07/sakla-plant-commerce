@@ -47,9 +47,9 @@ export default function AdminDashboardPage() {
             </div>
             <div className="stat-card">
               <div className="stat-card__icon stat-card__icon--purple">
-                <span className="material-symbols-outlined">attach_money</span>
+                <span className="material-symbols-outlined">currency_rupee</span>
               </div>
-              <div className="stat-card__value">${stats?.avgPrice ?? '—'}</div>
+              <div className="stat-card__value">₹{stats?.avgPrice ? Math.round(stats.avgPrice).toLocaleString('en-IN') : '—'}</div>
               <div className="stat-card__label">Avg. Price</div>
             </div>
           </div>

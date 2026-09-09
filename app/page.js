@@ -6,8 +6,8 @@ import CategoryCard from './components/CategoryCard';
 import { getFeaturedPlants, getCategories, getHeroImages } from '../lib/db';
 
 export const metadata = {
-  title: 'Verdant Grove — Wholesale & Retail Nursery',
-  description: 'Access Verdant Grove\'s extensive nursery inventory. Browse curated, high-grade botanicals previously only available to landscaping professionals.',
+  title: 'Sakla — Wholesale & Retail Nursery',
+  description: 'Access Sakla\'s extensive nursery inventory. Browse curated, high-grade botanicals previously only available to landscaping professionals.',
 };
 
 export default function HomePage() {
@@ -27,7 +27,7 @@ export default function HomePage() {
               <div>
                 <h1 className="hero__title">Cultivating Quality, Now Online.</h1>
                 <p className="hero__desc type-body-md">
-                  Access Verdant Grove&apos;s extensive nursery inventory directly. Browse our curated selection of high-grade botanicals, previously only available to landscaping professionals.
+                  Access Sakla&apos;s extensive nursery inventory directly. Browse our curated selection of high-grade botanicals, previously only available to landscaping professionals.
                 </p>
                 <div className="hero__actions">
                   <Link href="/shop" className="btn-primary">Browse Inventory</Link>

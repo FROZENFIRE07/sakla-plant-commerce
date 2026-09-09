@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import { getServices } from '../../lib/db';
 
 export const metadata = {
-  title: 'Contract Services — Verdant Grove',
+  title: 'Contract Services — Sakla',
   description: 'High-end botanical design, event styling, and professional maintenance for commercial and civic spaces.',
 };
 

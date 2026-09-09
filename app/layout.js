@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Verdant Grove — Wholesale & Retail Nursery',
-  description: 'Access Verdant Grove\'s extensive nursery inventory. Browse curated, high-grade botanicals previously only available to landscaping professionals.',
+  title: 'Sakla — Wholesale & Retail Nursery',
+  description: 'Access Sakla\'s extensive nursery inventory. Browse curated, high-grade botanicals previously only available to landscaping professionals.',
 };
 
 export default function RootLayout({ children }) {

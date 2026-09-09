@@ -22,7 +22,7 @@ export default function PlantCard({ plant, variant = 'shop' }) {
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span className="plant-card__price" style={{ marginLeft: 0, color: 'var(--color-primary)' }}>
-              ${plant.price.toFixed(2)}
+              ₹{plant.price.toLocaleString('en-IN')}
             </span>
             <span className="plant-card__add-btn">
               <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>add</span>
@@ -52,7 +52,7 @@ export default function PlantCard({ plant, variant = 'shop' }) {
         <div>
           <div className="plant-card__header">
             <h3 className="plant-card__name">{plant.name}</h3>
-            <span className="plant-card__price">${plant.price}</span>
+            <span className="plant-card__price">₹{plant.price.toLocaleString('en-IN')}</span>
           </div>
           <p className="plant-card__scientific">{plant.scientificName}</p>
           {plant.careIcons?.length > 0 && (

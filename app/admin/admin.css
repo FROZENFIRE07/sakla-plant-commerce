@@ -52,8 +52,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 12px;
-  border-radius: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
   font-size: 14px;
   font-weight: 500;
   color: rgba(255,255,255,0.7);
@@ -125,17 +125,18 @@
   font-weight: 600;
 }
 .admin-header__logout {
-  padding: 6px 14px;
+  padding: 8px 18px;
   border: 1px solid #e0e0e0;
-  border-radius: 6px;
+  border-radius: 50px;
   font-size: 13px;
+  font-weight: 500;
   color: #5f5e5e;
   background: #ffffff;
   cursor: pointer;
   transition: all 0.2s;
 }
 .admin-header__logout:hover {
-  background: #f5f5f5;
+  background: #fff5f5;
   border-color: #ba1a1a;
   color: #ba1a1a;
 }
@@ -156,22 +157,25 @@
 .stat-card {
   background: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: 12px;
+  border-radius: 18px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
-.stat-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.stat-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
 .stat-card__icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 22px;
 }
 .stat-card__icon--green { background: #c5eadf; color: #1a3c34; }
 .stat-card__icon--blue { background: #d4e8d4; color: #2a3a2c; }
@@ -193,14 +197,15 @@
 .data-table-wrapper {
   background: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: 12px;
+  border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
 }
 .data-table-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 18px 24px;
   border-bottom: 1px solid #e0e0e0;
 }
 .data-table-header__title {
@@ -215,13 +220,13 @@
 }
 .data-table th {
   text-align: left;
-  padding: 12px 24px;
+  padding: 14px 24px;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #717976;
-  background: #f9f9f9;
+  background: #fafafa;
   border-bottom: 1px solid #e0e0e0;
 }
 .data-table td {
@@ -232,7 +237,7 @@
   vertical-align: middle;
 }
 .data-table tr:last-child td { border-bottom: none; }
-.data-table tr:hover td { background: #f9f9f9; }
+.data-table tr:hover td { background: #fbfbfb; }
 
 .data-table__plant-cell {
   display: flex;
@@ -240,9 +245,9 @@
   gap: 12px;
 }
 .data-table__plant-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   object-fit: cover;
   border: 1px solid #e0e0e0;
 }
@@ -254,8 +259,8 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 3px 10px;
-  border-radius: 20px;
+  padding: 4px 12px;
+  border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
 }
@@ -265,9 +270,9 @@
 
 /* Action buttons */
 .action-btn {
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -275,19 +280,28 @@
   background: #ffffff;
   color: #5f5e5e;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
-.action-btn:hover { background: #f3f3f3; border-color: #c1c8c4; }
-.action-btn--danger:hover { background: #ffdad6; border-color: #ba1a1a; color: #ba1a1a; }
+.action-btn:hover {
+  background: #f3f3f3;
+  border-color: #c1c8c4;
+  transform: translateY(-1px);
+}
+.action-btn--danger:hover {
+  background: #ffdad6;
+  border-color: #ba1a1a;
+  color: #ba1a1a;
+}
 .action-btn .material-symbols-outlined { font-size: 18px; }
 
 /* ── Admin Forms ────────────────────────────────────────── */
 .admin-form {
   background: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: 12px;
+  border-radius: 20px;
   padding: 32px;
   max-width: 720px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
 }
 .admin-form__group {
   margin-bottom: 20px;
@@ -318,31 +332,42 @@
   justify-content: center;
   gap: 8px;
   height: 44px;
-  padding: 0 24px;
-  border-radius: 8px;
+  padding: 0 28px;
+  border-radius: 50px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.25s ease;
   border: none;
 }
 .admin-btn--primary {
   background: #1a3c34;
   color: #ffffff;
+  box-shadow: 0 4px 12px rgba(26, 60, 52, 0.2);
 }
-.admin-btn--primary:hover { background: #01261f; }
+.admin-btn--primary:hover {
+  background: #01261f;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(26, 60, 52, 0.28);
+}
 .admin-btn--secondary {
   background: #ffffff;
   color: #5f5e5e;
-  border: 1px solid #e0e0e0;
+  border: 1.5px solid #e0e0e0;
 }
-.admin-btn--secondary:hover { background: #f5f5f5; }
+.admin-btn--secondary:hover {
+  background: #f5f5f5;
+  transform: translateY(-1px);
+}
 .admin-btn--danger {
   background: #ffffff;
   color: #ba1a1a;
-  border: 1px solid #ffdad6;
+  border: 1.5px solid #ffdad6;
 }
-.admin-btn--danger:hover { background: #ffdad6; }
+.admin-btn--danger:hover {
+  background: #ffdad6;
+  transform: translateY(-1px);
+}
 
 /* ── Login Page ─────────────────────────────────────────── */
 .login-page {
@@ -355,7 +380,7 @@
 }
 .login-card {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 24px;
   padding: 40px;
   width: 100%;
   max-width: 420px;
@@ -378,8 +403,8 @@
 .login-card__error {
   background: #ffdad6;
   color: #93000a;
-  padding: 10px 14px;
-  border-radius: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
   font-size: 13px;
   margin-bottom: 16px;
   display: flex;
@@ -398,23 +423,24 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 16px;
+  padding: 18px;
   background: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: 10px;
+  border-radius: 16px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.25s ease;
   text-decoration: none;
   color: #1a1c1c;
 }
 .quick-action:hover {
   border-color: #1a3c34;
-  box-shadow: 0 2px 8px rgba(26,60,52,0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(26,60,52,0.1);
 }
 .quick-action__icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: #c5eadf;
   color: #1a3c34;
   display: flex;

@@ -5,7 +5,7 @@ import PlantCard from '../components/PlantCard';
 import { getPlants } from '../../lib/db';
 
 export const metadata = {
-  title: 'Show Plants — Verdant Grove',
+  title: 'Show Plants — Sakla',
   description: 'Browse our curated selection of show plants, rare specimens, and high-grade botanicals.',
 };
 

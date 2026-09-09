@@ -1,8 +1,8 @@
 import './admin.css';
 
 export const metadata = {
-  title: 'Admin — Verdant Grove',
-  description: 'Verdant Grove administration portal.',
+  title: 'Admin — Sakla',
+  description: 'Sakla administration portal.',
 };
 
 export default function AdminLayout({ children }) {

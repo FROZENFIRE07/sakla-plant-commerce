@@ -101,8 +101,8 @@ export default function AdminNewPlantPage() {
 
             <div className="admin-form__row">
               <div className="admin-form__group">
-                <label className="admin-form__label" htmlFor="price">Price ($) *</label>
-                <input id="price" name="price" type="number" step="0.01" min="0" className="input-text" required placeholder="0.00" />
+                <label className="admin-form__label" htmlFor="price">Price (₹) *</label>
+                <input id="price" name="price" type="number" step="any" min="0" className="input-text" required placeholder="e.g. 1499" />
               </div>
               <div className="admin-form__group">
                 <label className="admin-form__label" htmlFor="stock">Stock Quantity *</label>

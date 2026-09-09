@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div>
-          <div className="footer__brand">Verdant Grove</div>
+          <div className="footer__brand">Sakla</div>
           <p className="footer__desc">
             Wholesale &amp; retail nursery supplying high-grade botanicals for professional and home environments.
           </p>
@@ -26,7 +26,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="footer__copy">
-          © {new Date().getFullYear()} Verdant Grove Wholesale &amp; Retail. All rights reserved.
+          © {new Date().getFullYear()} Sakla Wholesale &amp; Retail. All rights reserved.
         </div>
       </div>
     </footer>
