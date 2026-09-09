@@ -20,7 +20,7 @@ export default async function ShopPage({ searchParams }) {
   return (
     <>
       <Navbar />
-      <div style={{ display: 'flex', flex: 1 }}>
+      <div style={{ display: 'flex', flex: 1, minWidth: 0, overflow: 'hidden' }}>
         <main style={{ flex: 1, width: '100%', minHeight: '100vh' }}>
           <div className="container" style={{ paddingTop: 'var(--space-stack-lg)', paddingBottom: 'var(--space-section-gap)' }}>
 
@@ -34,8 +34,8 @@ export default async function ShopPage({ searchParams }) {
                   Curated specimens ready for immediate exhibition. From social media highlights to your living space, explore our current stock of rare and mature plants.
                 </p>
               </div>
-              <div style={{ display: 'flex', gap: 'var(--space-stack-sm)' }}>
-                <div style={{ position: 'relative', width: '180px' }}>
+              <div className="shop-filters-row">
+                <div className="shop-filter-group">
                   <form>
                     <select
                       name="size"
@@ -44,16 +44,16 @@ export default async function ShopPage({ searchParams }) {
                       onChange="this.form.submit()"
                     >
                       <option value="any">Any Size</option>
-                      <option value="small">Small (4&quot;-6&quot; pot)</option>
-                      <option value="medium">Medium (8&quot;-10&quot; pot)</option>
-                      <option value="large">Large (12&quot;+ pot)</option>
+                      <option value="small">Small (4&quot;-6&quot;)</option>
+                      <option value="medium">Medium (8&quot;-10&quot;)</option>
+                      <option value="large">Large (12&quot;+)</option>
                     </select>
                     <span className="material-symbols-outlined" style={{ position: 'absolute', right: '8px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: 'var(--color-outline)' }}>
                       expand_more
                     </span>
                   </form>
                 </div>
-                <div style={{ position: 'relative', width: '180px' }}>
+                <div className="shop-filter-group">
                   <form>
                     <select
                       name="sort"
@@ -61,10 +61,10 @@ export default async function ShopPage({ searchParams }) {
                       defaultValue={sort}
                       onChange="this.form.submit()"
                     >
-                      <option value="featured">Sort by: Featured</option>
+                      <option value="featured">Featured</option>
                       <option value="price-asc">Price: Low to High</option>
                       <option value="price-desc">Price: High to Low</option>
-                      <option value="newest">Newest Arrivals</option>
+                      <option value="newest">Newest</option>
                     </select>
                     <span className="material-symbols-outlined" style={{ position: 'absolute', right: '8px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: 'var(--color-outline)' }}>
                       expand_more

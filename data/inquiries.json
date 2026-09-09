@@ -1,0 +1,30 @@
+[
+  {
+    "id": "inq_101",
+    "name": "Aarav Sharma",
+    "phone": "+91 98201 12345",
+    "email": "aarav.sharma@example.com",
+    "city": "Mumbai",
+    "type": "purchase",
+    "plantId": "fiddle-leaf-fig",
+    "plantName": "Fiddle Leaf Fig",
+    "quantity": 2,
+    "notes": "Looking for healthy specimens for living room with east-facing window.",
+    "status": "new",
+    "createdAt": "2026-09-09T13:21:11.344Z"
+  },
+  {
+    "id": "inq_102",
+    "name": "Pooja Deshmukh",
+    "phone": "+91 98450 67890",
+    "email": "pooja.d@example.com",
+    "city": "Pune",
+    "type": "decoration",
+    "plantId": "vertical-gardens",
+    "plantName": "Vertical Gardens Installation",
+    "quantity": 1,
+    "notes": "Corporate lobby redesign. Need architectural green wall estimate.",
+    "status": "contacted",
+    "createdAt": "2026-09-08T17:21:11.345Z"
+  }
+]

@@ -47,10 +47,12 @@ export default function AdminDashboardPage() {
             </div>
             <div className="stat-card">
               <div className="stat-card__icon stat-card__icon--purple">
-                <span className="material-symbols-outlined">currency_rupee</span>
+                <span className="material-symbols-outlined">contact_phone</span>
               </div>
-              <div className="stat-card__value">₹{stats?.avgPrice ? Math.round(stats.avgPrice).toLocaleString('en-IN') : '—'}</div>
-              <div className="stat-card__label">Avg. Price</div>
+              <div className="stat-card__value" style={{ color: stats?.pendingInquiries > 0 ? '#b8860b' : 'inherit' }}>
+                {stats?.pendingInquiries ?? '—'}
+              </div>
+              <div className="stat-card__label">New Inquiries</div>
             </div>
           </div>
 
@@ -59,6 +61,12 @@ export default function AdminDashboardPage() {
             Quick Actions
           </h3>
           <div className="quick-actions">
+            <Link href="/admin/inquiries" className="quick-action">
+              <div className="quick-action__icon" style={{ background: '#fef3c7', color: '#b45309' }}>
+                <span className="material-symbols-outlined">mark_email_unread</span>
+              </div>
+              <span className="quick-action__text">Manage Inquiries ({stats?.pendingInquiries ?? 0})</span>
+            </Link>
             <Link href="/admin/inventory/new" className="quick-action">
               <div className="quick-action__icon">
                 <span className="material-symbols-outlined">add_circle</span>

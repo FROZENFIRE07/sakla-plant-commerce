@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import ConsultationButton from './ConsultationButton';
 import { getServices } from '../../lib/db';
 
 export const metadata = {
@@ -13,7 +14,7 @@ export default function ServicesPage() {
   return (
     <>
       <Navbar />
-      <div style={{ display: 'flex', flex: 1 }}>
+      <div style={{ display: 'flex', flex: 1, minWidth: 0, overflow: 'hidden' }}>
         <main style={{ flex: 1, width: '100%' }}>
 
           {/* Hero */}
@@ -39,7 +40,7 @@ export default function ServicesPage() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={service.image} alt={service.name} />
                   </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-stack-md)', padding: isReversed ? '0 var(--space-stack-lg) 0 0' : '0 0 0 var(--space-stack-lg)' }}>
+                  <div className="service-content">
                     <span className="tag-pill" style={{ width: 'fit-content', background: 'rgba(21,36,24,0.1)', fontSize: '12px' }}>
                       {service.tag}
                     </span>
@@ -64,9 +65,7 @@ export default function ServicesPage() {
               <p className="type-body-md" style={{ color: 'var(--color-on-surface-variant)' }}>
                 Consult with our lead botanists and project managers to discuss custom solutions for your specific environment and requirements.
               </p>
-              <button className="btn-primary" style={{ paddingLeft: 'var(--space-margin-desktop)', paddingRight: 'var(--space-margin-desktop)' }}>
-                Request a Consultation
-              </button>
+              <ConsultationButton />
             </div>
           </section>
         </main>

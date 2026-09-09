@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <div style={{ display: 'flex', flex: 1, width: '100%', maxWidth: 'var(--container-max)', margin: '0 auto', position: 'relative' }}>
+      <div style={{ display: 'flex', flex: 1, width: '100%', maxWidth: 'var(--container-max)', margin: '0 auto', position: 'relative', minWidth: 0, overflow: 'hidden' }}>
         <main style={{ flex: 1, width: '100%', paddingBottom: 'var(--space-section-gap)' }}>
 
           {/* Hero Section */}

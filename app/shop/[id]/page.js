@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import PlantDetailActions from './PlantDetailActions';
 import { getPlant, getPlants } from '../../../lib/db';
 
 export async function generateMetadata({ params }) {
@@ -24,7 +25,7 @@ export default async function PlantDetailPage({ params }) {
   return (
     <>
       <Navbar />
-      <div style={{ display: 'flex', flex: 1 }}>
+      <div style={{ display: 'flex', flex: 1, minWidth: 0, overflow: 'hidden' }}>
         <main style={{ flex: 1, flexGrow: 1 }}>
 
           {/* Back navigation */}
@@ -133,16 +134,7 @@ export default async function PlantDetailPage({ params }) {
                   <span className="detail-price">₹{plant.price.toLocaleString('en-IN')}</span>
                   <span className="detail-price-unit">/ mature plant</span>
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-stack-sm)' }}>
-                  <button className="btn-primary btn-full">
-                    <span className="material-symbols-outlined">shopping_cart</span>
-                    Inquiry for Purchase
-                  </button>
-                  <button className="btn-secondary btn-full">
-                    <span className="material-symbols-outlined">event_available</span>
-                    Book for Decoration
-                  </button>
-                </div>
+                <PlantDetailActions plant={plant} />
                 <p className="type-caption" style={{ color: 'var(--color-secondary)', textAlign: 'center', marginTop: 'var(--space-stack-sm)' }}>
                   *Delivery and professional installation available.
                 </p>
