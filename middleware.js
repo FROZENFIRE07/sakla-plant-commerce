@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { jwtVerify } from 'jose';
 
 const JWT_SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET || 'fallback_secret_not_for_production'
+  (process.env.JWT_SECRET || 'fallback_secret_not_for_production').trim()
 );
 
 const COOKIE_NAME = 'vg_admin_token';
