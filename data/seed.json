@@ -1,0 +1,238 @@
+{
+  "plants": [
+    {
+      "id": "monstera-deliciosa",
+      "name": "Monstera Deliciosa",
+      "scientificName": "Monstera deliciosa",
+      "category": "show-plants",
+      "price": 45.00,
+      "stock": 18,
+      "description": "The Monstera Deliciosa is a striking tropical plant known for its large, naturally perforated leaves. This large specimen comes in a 10\" pot and makes a dramatic statement in any room. It thrives in bright indirect light and adds a lush, tropical feel to both home and office spaces.",
+      "shortDesc": "Large specimen, 10\" pot",
+      "tags": ["Low Light"],
+      "careIcons": ["light_mode"],
+      "care": {
+        "light": "Bright, indirect sunlight.",
+        "water": "Water when top inch is dry.",
+        "soil": "Well-draining potting mix.",
+        "temp": "65°F - 85°F"
+      },
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD4G7aZYnUaBtzDyVFMxJx6Mxmz6x-MMVF_EjQTh9GxFJ0cExJc1sXVIq1nf1esYRxDqVEYi8ZZxRQ31-6whEySSEs7XKTBebgEh3o_qlQVf4DT2VYMs_reA4XhB5qooNI9VE8s5v1_2EjCIRTukYcxRa5aWKaY0W845JrHr71twiuMcxsT6wBmOVuTHE8oJuh2-fLXRnMfi9VxzGSbDhy17uusIIXy_hp9klwh62Xy4kb11HxsDnX4",
+      "gallery": [],
+      "featured": true
+    },
+    {
+      "id": "ficus-elastica",
+      "name": "Ficus Elastica",
+      "scientificName": "Ficus elastica",
+      "category": "show-plants",
+      "price": 32.50,
+      "stock": 24,
+      "description": "The Ficus Elastica, also known as the Rubber Plant, features stunning dark burgundy-tinged leaves that create a bold, architectural look. Easy to care for and incredibly resilient, this 8\" potted specimen is perfect for adding a touch of drama to minimalist interiors.",
+      "shortDesc": "Burgundy variety, 8\" pot",
+      "tags": ["Full Sun"],
+      "careIcons": ["light_mode"],
+      "care": {
+        "light": "Bright, direct to indirect light.",
+        "water": "Allow soil to dry between waterings.",
+        "soil": "Well-draining, all-purpose mix.",
+        "temp": "60°F - 80°F"
+      },
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBwIVg44YTj3391bUkQMpVqmvoZMsdmCwnmiCbWY2_9EJcuGTqteJ9kFem2aaMOfJLGc5ffTw4vtt23Pbko96cLc0huY_R_mrPye0ro00ijcnXiEzWwRzI4sfM7Cx7SScAl1regRkWLdZ8ipu7JxRjTxo5o10c2IVAb-MyjdpFhhpMSbj6pxQELXFMnbFF3fLrTcbjWqv2jshusXJPyZsgFf9Y4wdCp_bnICXgSNGFp_qY-xOknvZ7h",
+      "gallery": [],
+      "featured": true
+    },
+    {
+      "id": "calathea-orbifolia",
+      "name": "Calathea Orbifolia",
+      "scientificName": "Goeppertia orbifolia",
+      "category": "show-plants",
+      "price": 28.00,
+      "stock": 15,
+      "description": "The Calathea Orbifolia is a stunning prayer plant with large, round, silver-green striped leaves. This show-grade specimen in a 6\" pot is non-toxic and pet-friendly, making it an ideal choice for households with animals. It thrives in medium indirect light and high humidity.",
+      "shortDesc": "Show grade, 6\" pot",
+      "tags": ["Pet Friendly"],
+      "careIcons": ["brightness_medium", "water_drop"],
+      "care": {
+        "light": "Medium, indirect light.",
+        "water": "Keep soil consistently moist.",
+        "soil": "Peat-based, well-draining mix.",
+        "temp": "65°F - 80°F"
+      },
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCpoU3jLetf8HtXdq4zjDXRFQwD6QuPYFkbRkhIAzIsNMb2bHJQhyyTPJYNoGxHY7JUlaWMYkqM-RRy8czNg3K67gtjkaLBhYHIOlRe9m9dPIvVZ7cHioOZDfS-fnwJv3qDnkbMbP2IX-qwSl7dMiryOpGbXPyWY-iPBNIFprESscBVL9VW2fhMfEHG7cHEr1Pt2p4H-NH0eJERGmJZaQrPr_BQ8j42HfcmkDcKBfd7oKuwsleJjjdt",
+      "gallery": [],
+      "featured": true
+    },
+    {
+      "id": "golden-pothos",
+      "name": "Golden Pothos",
+      "scientificName": "Epipremnum aureum",
+      "category": "show-plants",
+      "price": 22.00,
+      "stock": 30,
+      "description": "The Golden Pothos is one of the most popular and easy-to-grow houseplants. This trailing specimen comes in an 8\" hanging basket and features vibrant green and gold variegated leaves. Perfect for shelves, hanging baskets, or as a climbing plant.",
+      "shortDesc": "Trailing, 8\" hanging basket",
+      "tags": ["Low Light", "Easy Care"],
+      "careIcons": ["brightness_medium"],
+      "care": {
+        "light": "Low to bright indirect light.",
+        "water": "Water when soil is dry.",
+        "soil": "Standard potting mix.",
+        "temp": "60°F - 85°F"
+      },
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZqzlqVL7iljPLgaCVE0Ayqrc9PLdoukK7VeDYuqGoYcTK5zDJTkCbw5Y4IeU0zhw36Ol5quu0ttRKJqu2yyEApA9MBYRUkWIIo94f0h90BjOWdDQCaHCaNuYRwnzKm3UVRDNNzJYJZWI0YpiDFxFlIt3UUDJYDvPgcn5ScnYKyDltBvadROE-veQfRj7s_olm-_I8FNZA98seKgMe_CLmUJ6MVKh3XH9QH-2NQNCE5wxGW6nZJhZf",
+      "gallery": [],
+      "featured": true
+    },
+    {
+      "id": "monstera-albo",
+      "name": "Monstera Albo",
+      "scientificName": "Monstera deliciosa 'Albo Borsigiana'",
+      "category": "show-plants",
+      "price": 450.00,
+      "stock": 3,
+      "description": "The highly coveted Monstera Albo Borsigiana features stunning white and green variegated leaves that make each specimen unique. This rare collector's plant is a statement piece that demands attention in any space. Requires bright indirect light to maintain its variegation.",
+      "shortDesc": "Rare variegated, collector's item",
+      "tags": ["Trending", "Rare"],
+      "careIcons": ["light_mode", "water_drop"],
+      "care": {
+        "light": "Bright, indirect sunlight.",
+        "water": "Water when top 2 inches dry.",
+        "soil": "Chunky, well-draining aroid mix.",
+        "temp": "65°F - 80°F"
+      },
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_iB7Fo93oQcEavJwYgbeNYnXm_fgqY_1YR0jBrYb72hVLk-MJ0uXlS0od49QA455WiHBW8wnrUPbN81IuoHlIZKNxP66PQ7myBfjxulIwb4VlfNcl5HysjtjqtyQKTENP_CWUTfegeUte1OFSvvKPCgR6j35G6REbu_56-P_cG01L1kI4XzRpavHNRC8e9Hd7odb0g6Kyt34wiigwZiHETyy7p9qsKYutWW5fjwAUS-lDY4FEWp7k",
+      "gallery": [],
+      "featured": false
+    },
+    {
+      "id": "pink-princess",
+      "name": "Pink Princess",
+      "scientificName": "Philodendron erubescens",
+      "category": "show-plants",
+      "price": 120.00,
+      "stock": 7,
+      "description": "The Philodendron Pink Princess is a stunning tropical houseplant prized for its dark green leaves splashed with vivid bubblegum pink variegation. Each leaf is unique, making this a true collector's item. Thrives in bright indirect light with high humidity.",
+      "shortDesc": "Variegated, 6\" pot",
+      "tags": ["Rare"],
+      "careIcons": ["light_mode", "air"],
+      "care": {
+        "light": "Bright, indirect light.",
+        "water": "Keep soil lightly moist.",
+        "soil": "Aroid mix with perlite.",
+        "temp": "65°F - 80°F"
+      },
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBeZiW5NMurNkIIHKkBxl7kzErJR3CbRhXYaUwQmQFNPjq7Vaxn99nyrlqXfMKsQpLCAkYaK2JuqW73JgzVwWVo8qzQEk9HJrII750sz4Vi_cL_oynAilLVv4YBK9SKXwAQTFCpqHOElymOJ62yyDl2NepbT2Qw_m0L1NJlE-QsPK8JkLZt17oSNyIr1SNwbmMU67qNDXMZVK5f1tEl-66Z6ZA5RCnArzKdTJ-8eHEF15l20V3k3yag",
+      "gallery": [],
+      "featured": false
+    },
+    {
+      "id": "fiddle-leaf-fig",
+      "name": "Fiddle Leaf Fig",
+      "scientificName": "Ficus lyrata",
+      "category": "show-plants",
+      "price": 145.00,
+      "stock": 12,
+      "description": "The Fiddle Leaf Fig is a striking structural plant renowned for its large, heavily veined, violin-shaped leaves that grow upright on a sleek trunk. Native to western Africa, it thrives in warm, bright environments and serves as an exceptional focal point in modern interior designs.",
+      "shortDesc": "Large specimen, floor plant",
+      "tags": ["Indoor Plant", "Air Purifying", "Large Specimen"],
+      "careIcons": ["light_mode", "water_drop", "potted_plant", "thermostat"],
+      "care": {
+        "light": "Bright, indirect sunlight.",
+        "water": "Allow top 2 inches to dry.",
+        "soil": "Well-draining, rich mix.",
+        "temp": "60°F - 85°F"
+      },
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuXq60XwOGPbjTWnl361NiCzjm9IRUrE2VPVB1qZt0HrjYDDXxCiH1-gSCLZAv9roKlXDjKBEeocwSBeKpthjf6KA5LbR8NPiYYwyHPupF55Q-lPEbTnl7LBlrYVIObJfEoeU-3RXX16JGpehlIX1PdOlUrCZ98VcknydJS63WSJox4qTc_-L6Ucm1r7YnknWE55Fm1QmvFO0LFThcAp-nAdcgJpHQpeNzJb5aS0CW5OmKWIkDnZLu",
+      "gallery": [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuB9xBeyQoJkyObAMcbP2L4dDdyPxyCrRUs_p90errIN9zVbV5TeN0xWOxcIfSFL4SDnVKy2FGkvz2McSfh-7XwYkTPCPq8hT_cKR3BIO5bOqqZwVh2sizxMdpkBRy0gSTGWI9oDLXztt0XzMCDFcNNh3RSDIibTAdeu-bGsuKnTOFWJmqbgAn8PUU1LS0ZOhVzv4vi3dQvviS66S52ZTRRfytKpFCCuBZWnuZ2bnQq3e7aZ02Lf9B7D",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuC71LL09iyEnMUai_ILlMsTEVl7eSstbr9oH5gVNHVfjqWUpa8xBvielmo5TkDZRvzm7HyuxpLokeTM_l6U0DBmTjI2GHVPK73pd8Ejt2wMCgLPnJjNnZ1u2KEO7anV-nk75G1pDdfoElnBEcBMvHMDHjJXSq471surJedkk1pTGUOVcsV2gtkRXYFQjARfQFj_TS3jKKnuT0oAy8iGzKx_L45ZNb35NPdbQhsDSN2eu1JsqBvp6Sh7",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD8U_Gxl6TakUPFmXIOnzGLJdp5V-khKGX4bBuS0WdaBBMC80qu0fMO6N8q3mCx-a48LbYZrPhwVxAZbGqQXVQIbtJoKyD4E2yp_aLtCwWOKrQJR6e5IQ--RAKe7vJCbnLh3hfW1Rwi1COMR6Bo2WVBJe0CjgJ2WKUu2P3f-W8NdCqC58eZcqTwnJvEEYyQxSIv2A6xUYFW_ZrcP0rat8Lt3SM430c3VkRkMPiuD8GEZlTl3j_UV7un"
+      ],
+      "featured": false
+    },
+    {
+      "id": "strap-leaf-anthurium",
+      "name": "Strap Leaf Anthurium",
+      "scientificName": "Anthurium vittariifolium",
+      "category": "show-plants",
+      "price": 175.00,
+      "stock": 5,
+      "description": "The Anthurium Vittariifolium is an exotic trailing plant with long, pendant-like dark green leaves that cascade dramatically. This rare epiphytic plant is a showstopper when displayed in hanging planters or on elevated shelves.",
+      "shortDesc": "Trailing, rare epiphyte",
+      "tags": ["Rare"],
+      "careIcons": ["brightness_medium", "air"],
+      "care": {
+        "light": "Medium, indirect light.",
+        "water": "Keep moist, not waterlogged.",
+        "soil": "Orchid bark and sphagnum mix.",
+        "temp": "65°F - 80°F"
+      },
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAFa6ZBZwdywL1fOGuG5SfhMEtoW3KA2ubzZFnVyFPZYSukr-ueNtK2USk7pdNPniysC-HeHmVg3ROGz6mon5DC1C20NtVRUl76lPAz92_1RduDPPA6YfRwyO3UsHQPghwnaizO5aE-JtPGAiFwnL4bn-QN5svGy3g2vPWs4wcqkPYgNFBjMw61-t_ltY_xkLwvFvdoiF2JAJZ_6M2kXC2tRSjBNP307Ma7cPzAbtFb2vlKnuq-twzL",
+      "gallery": [],
+      "featured": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "show-plants",
+      "name": "Show Plants",
+      "description": "Exhibition grade botanicals.",
+      "icon": "local_florist",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDO4-7GSVD1oRNP8o20imsxmUIoJxZYshEeaSbYWGqie2mS4gtwmI0qTSm43GTPzqb5LI0j-1MVZqpEo_S1y7_OwDEp9Iv0IhIhiN_p5kf4bBpniacJmBc7afX5MzZjLHGIJai36V9P_MvMPn8c088DgnCOjbxaRzgv5W81ggsbyCyep2kGiLwhrRqOxJkmUaa2JJvSTTC89QDLbE1hc5ym3pQbKp6L0mhu_dTNbGRlmnRcIFpah0kW",
+      "size": "large"
+    },
+    {
+      "id": "herbs",
+      "name": "Herbs",
+      "description": "Fresh culinary and medicinal herbs.",
+      "icon": "eco",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDoR3luRY4KiNeSgj-Z9fFRyf0mWLkrrB29jDmGkaA5UFZt2D2WqRQp23FPLLO4R59VzEwWy49dX9Ko2__NmjMoXhWpKsTZYlopUa0rF61N6wNhE_QmPSDMvyzydT3oeZ0YJPED_hGqaCl1mpY2ye7xGmt1mq9WYUo9uLiYgLSCDuqIzPQRTK0-iLL-MgFNM0zJKyFa7tvKSqvQ7Kx-jBUWxt3iMf8j2e0UH_97ItU4iR51VBbcc_6x",
+      "size": "small"
+    },
+    {
+      "id": "fruiting",
+      "name": "Fruiting",
+      "description": "Fruit-bearing trees and shrubs.",
+      "icon": "cloud_download",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBNKZYJbFz7opi3iTyDhVvofkyWZwByF-sJGCc1hAGGSA3hSA-B8rolE6wTt1sgpgk9K8fTmDf25eKkVZi7hUZtcq782t8N-4F23KOriood9x3nxMOq6FvHnAlCBwPjSLAO5X873d-MOTdeiBxNbO07ExB7KV66D8z8DWfBIlwNcHwrce0K_ZI7U-gBciezt7tY6iCzHHTKd89TvbnJEDmGWnNWnQpgEtd6ZNzqQu2goM05tsnh2UoW",
+      "size": "small"
+    },
+    {
+      "id": "containers",
+      "name": "Containers",
+      "description": "Premium pots and planters.",
+      "icon": "inventory_2",
+      "size": "small"
+    }
+  ],
+  "services": [
+    {
+      "id": "vertical-gardens",
+      "name": "Vertical Gardens",
+      "tag": "Corporate Installations",
+      "description": "Transform stark architectural structures into living, breathing ecosystems. Our vertical garden installations are engineered for sustainability and visual impact, commonly featured in high courts, corporate headquarters, and luxury retail environments. We handle rigorous structural assessments, custom irrigation design, and ongoing curation.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0rOTMeGTwrD2XnufuE6dkZ33JJt7DE8AIkKDeajaq6-7ZVv48BoHTH1c0CL2pV13j01dTL3hteS2_se52I3SY51XPX-dWzwj2deFIr8o4PJi9JZgkrPTXP9v_Ni8Mt4SCE31RKnLMslEW73i6t_Obwv_fUlS5vMLLtjuW-1XjeF7E3VqWld8hNkkBXjRRHg0SooYi3uJOVX5QVrgmsT9zTNeJCa3EutY9hYlb3hdtZ6Pvv7KEPtq3",
+      "layout": "image-left"
+    },
+    {
+      "id": "event-decoration",
+      "name": "Event Decoration",
+      "tag": "Bespoke Styling",
+      "description": "Elevate weddings, galas, and corporate functions with temporary botanical architecture. Our design team creates sweeping floral arches, immersive tablescapes, and dramatic entrance features. We source the highest grade seasonal blooms and rare foliage to guarantee a sophisticated, tailored atmosphere for momentous occasions.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuClJ6fxTheuLXx7vcJY3R30Qaq3TxYVkQC4UE014Iv6xCjFLd_seId9QoY-VRkkS9PVPV-2IMGbWV6yz4qroLDpko4C32r36TFinPgdthhf73RjSwVHVh0PdmQd9yVA48HQFfrwaMV4niRdyl0kK99KyzGgg5sHczWluTufC5fygcWCAD8CfIT70Ywtxpml4WVmAN_3wnlumJu3AUQeRIcSJAorgV3RjMoQxgXBk-Yp1DD0yf1PWs8P",
+      "layout": "image-right"
+    },
+    {
+      "id": "lawn-maintenance",
+      "name": "Professional Lawn Maintenance",
+      "tag": "Ongoing Care",
+      "description": "Preserve the pristine appearance of expansive commercial estates. Our maintenance contracts provide comprehensive care, including precision mowing, soil health management, and seasonal aeration. We ensure that your external grounds consistently reflect the high standards of your internal operations with dependable, quiet, and expert service.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDIcxPXSQxozEWxiOTUEOyO9ey2etx0iGCzLmi-cc4Q5ojBtMsbSZI_w8Jc3i6itJqRie0DQRhVMeHMHMnY01DEZNJLeTj_X19EjTCw7938CZXZ7CLpNLT7AbjQtO_bQCnsTMskly6cEhVQ3xZ5-XFA9v3Zsv9tPwqhrT4j7WxAI3WAIcOyMYx_QNJzjfNBrJb6PtTwkuzqJAB_42Yz4-5qNvasBOBSaAfqDmmeH94kuVK7Eryx4PJU",
+      "layout": "image-left"
+    }
+  ],
+  "heroImages": {
+    "greenhouse": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZXFLwZAl-_52YKYHnezxgideuNJJXfMdq5YhCqoTxKjtLOH_JG4hKnkxJqEMeIMUr-aFIJkbDYc-ik8u2LMSfzftLY9dOa3G74TwihFrjGjwBslouNbeZCWamKL0mw1Ux8kytbcDuH4IWl2ZstlnRBpF9ZlcPMGrshMzXWpHcvNu3pJc_ACHIdhiKBQ9keMWmVYHl5kWd50r9j4RbVIYo55VoT_cjipGKOZ-iYfi6uW_Uqfhyku7t"
+  }
+}

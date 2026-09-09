@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Show Plants - Verdant Grove</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#c5eadf",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#e5e2e1",
+                        "inverse-on-surface": "#f1f1f1",
+                        "outline": "#717976",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary": "#01261f",
+                        "on-surface": "#1a1c1c",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-fixed": "#0f1f13",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#b8ccb8",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#2a3a2c",
+                        "on-tertiary-container": "#91a492",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "background": "#f9f9f9",
+                        "inverse-surface": "#2f3131",
+                        "on-secondary-fixed-variant": "#474646",
+                        "tertiary-fixed": "#d4e8d4",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary": "#5f5e5e",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-primary": "#aacec3",
+                        "surface": "#f9f9f9",
+                        "primary-fixed-dim": "#aacec3",
+                        "surface-dim": "#dadada",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary": "#152418",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f3f3f3",
+                        "on-surface-variant": "#414846",
+                        "on-secondary-container": "#656464",
+                        "on-tertiary-fixed-variant": "#3a4b3c",
+                        "surface-bright": "#f9f9f9",
+                        "on-primary-fixed": "#00201a",
+                        "on-primary-container": "#83a69c",
+                        "surface-tint": "#43655c",
+                        "on-primary-fixed-variant": "#2b4d44",
+                        "primary-container": "#1a3c34",
+                        "outline-variant": "#c1c8c4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "section-gap": "80px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "caption": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-md": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased flex">
+<!-- NavigationDrawer (Hidden on mobile, visible on desktop) -->
+<aside class="hidden md:flex flex-col p-stack-md bg-surface-container-low dark:bg-surface-container-highest border-r border-outline-variant shadow-sm h-screen w-80 sticky top-0 shrink-0">
+<div class="mb-stack-lg px-stack-md">
+<h2 class="font-display text-headline-sm text-primary">Nursery Menu</h2>
+</div>
+<nav class="flex-1 flex flex-col gap-unit">
+<a class="flex items-center gap-stack-md px-stack-md py-stack-sm rounded-full text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-stack-md px-stack-md py-stack-sm rounded-full text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined">eco</span>
+<span class="font-label-md text-label-md">Herbs</span>
+</a>
+<a class="flex items-center gap-stack-md px-stack-md py-stack-sm rounded-full bg-primary-container text-on-primary-container hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined fill">local_florist</span>
+<span class="font-label-md text-label-md">Show Plants</span>
+</a>
+<a class="flex items-center gap-stack-md px-stack-md py-stack-sm rounded-full text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined">cloud_download</span>
+<span class="font-label-md text-label-md">Fruiting</span>
+</a>
+<a class="flex items-center gap-stack-md px-stack-md py-stack-sm rounded-full text-on-surface-variant hover:bg-surface-container-high transition-all duration-200" href="#">
+<span class="material-symbols-outlined">business_center</span>
+<span class="font-label-md text-label-md">Contracts</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col min-h-screen">
+<!-- TopAppBar (Visible on all screens, adjusting nav for mobile) -->
+<header class="w-full top-0 sticky bg-surface dark:bg-surface-dim z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-stack-md max-w-container-max mx-auto border-b border-outline-variant dark:border-outline">
+<button class="md:hidden p-unit text-primary dark:text-primary-fixed cursor-pointer active:opacity-70 hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="font-display text-headline-md font-bold text-primary dark:text-primary-fixed">Verdant Grove</div>
+<button class="p-unit text-primary dark:text-primary-fixed cursor-pointer active:opacity-70 hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<!-- Mobile Horizontal Nav (Replaces SideNav on mobile) -->
+<nav class="md:hidden flex overflow-x-auto gap-stack-md px-margin-mobile py-stack-sm border-b border-outline-variant bg-surface-container-lowest hide-scrollbar">
+<a class="whitespace-nowrap font-label-md text-label-md text-secondary pb-unit" href="#">Home</a>
+<a class="whitespace-nowrap font-label-md text-label-md text-secondary pb-unit" href="#">Herbs</a>
+<a class="whitespace-nowrap font-label-md text-label-md text-primary font-semibold border-b-2 border-primary pb-unit" href="#">Show Plants</a>
+<a class="whitespace-nowrap font-label-md text-label-md text-secondary pb-unit" href="#">Fruiting</a>
+<a class="whitespace-nowrap font-label-md text-label-md text-secondary pb-unit" href="#">Contracts</a>
+</nav>
+</header>
+<main class="flex-1 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-section-gap">
+<!-- Page Header & Filters -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-stack-lg gap-stack-md">
+<div>
+<h1 class="font-display text-headline-lg-mobile md:text-headline-lg text-on-background mb-unit">Show Plants</h1>
+<p class="text-secondary max-w-2xl">Curated specimens ready for immediate exhibition. From social media highlights to your living space, explore our current stock of rare and mature plants.</p>
+</div>
+<div class="flex gap-stack-sm w-full md:w-auto">
+<div class="relative w-full md:w-48">
+<select class="w-full appearance-none bg-surface-container-lowest border border-outline-variant text-on-surface py-2 pl-3 pr-10 rounded-DEFAULT font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary">
+<option>Any Size</option>
+<option>Small (4"-6" pot)</option>
+<option>Medium (8"-10" pot)</option>
+<option>Large (12"+ pot)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span>
+</div>
+<div class="relative w-full md:w-48">
+<select class="w-full appearance-none bg-surface-container-lowest border border-outline-variant text-on-surface py-2 pl-3 pr-10 rounded-DEFAULT font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary">
+<option>Sort by: Featured</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest Arrivals</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-stack-sm md:gap-gutter">
+<!-- Product Card 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT overflow-hidden group hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 flex flex-col h-full">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A stunning, mature Monstera Deliciosa plant with large, deeply fenestrated leaves. The plant is potted in a sleek, minimalist matte white ceramic pot. The setting is a bright, airy greenhouse with diffused natural sunlight filtering through, casting soft shadows. The overall aesthetic is clean, professional, and high-end botanical, focusing on the vibrant green textures of the foliage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_iB7Fo93oQcEavJwYgbeNYnXm_fgqY_1YR0jBrYb72hVLk-MJ0uXlS0od49QA455WiHBW8wnrUPbN81IuoHlIZKNxP66PQ7myBfjxulIwb4VlfNcl5HysjtjqtyQKTENP_CWUTfegeUte1OFSvvKPCgR6j35G6REbu_56-P_cG01L1kI4XzRpavHNRC8e9Hd7odb0g6Kyt34wiigwZiHETyy7p9qsKYutWW5fjwAUS-lDY4FEWp7k"/>
+<div class="absolute top-2 left-2 flex gap-1">
+<span class="bg-tertiary/10 text-tertiary px-2 py-1 text-[10px] font-label-md uppercase tracking-wider rounded-DEFAULT backdrop-blur-sm">Trending</span>
+</div>
+</div>
+<div class="p-stack-md flex flex-col flex-1 justify-between gap-stack-md">
+<div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-display text-headline-md text-on-background line-clamp-1">Monstera Albo</h3>
+<span class="font-body-lg text-body-lg font-bold text-on-background">$450</span>
+</div>
+<p class="font-caption text-caption text-secondary italic">Monstera deliciosa 'Albo Borsigiana'</p>
+<div class="flex gap-stack-sm mt-stack-sm">
+<div class="flex items-center gap-1 text-on-surface-variant" title="Bright Indirect Light">
+<span class="material-symbols-outlined text-[16px]">light_mode</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant" title="Water when top 2 inches dry">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+</div>
+</div>
+</div>
+<button class="w-full h-[48px] bg-primary-container text-on-primary font-label-md text-label-md rounded-DEFAULT hover:bg-primary transition-colors flex items-center justify-center">
+                            View Details
+                        </button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT overflow-hidden group hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 flex flex-col h-full">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A striking Philodendron Pink Princess with highly variegated leaves showing deep green and vivid bubblegum pink splahes. It sits elegantly in a textured charcoal grey terracotta pot on a clean, light wood pedestal. The background is a soft, out-of-focus neutral grey, emphasizing the vibrant pink hues. Lighting is studio-quality, creating a premium retail atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeZiW5NMurNkIIHKkBxl7kzErJR3CbRhXYaUwQmQFNPjq7Vaxn99nyrlqXfMKsQpLCAkYaK2JuqW73JgzVwWVo8qzQEk9HJrII750sz4Vi_cL_oynAilLVv4YBK9SKXwAQTFCpqHOElymOJ62yyDl2NepbT2Qw_m0L1NJlE-QsPK8JkLZt17oSNyIr1SNwbmMU67qNDXMZVK5f1tEl-66Z6ZA5RCnArzKdTJ-8eHEF15l20V3k3yag"/>
+</div>
+<div class="p-stack-md flex flex-col flex-1 justify-between gap-stack-md">
+<div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-display text-headline-md text-on-background line-clamp-1">Pink Princess</h3>
+<span class="font-body-lg text-body-lg font-bold text-on-background">$120</span>
+</div>
+<p class="font-caption text-caption text-secondary italic">Philodendron erubescens</p>
+<div class="flex gap-stack-sm mt-stack-sm">
+<div class="flex items-center gap-1 text-on-surface-variant" title="Bright Indirect Light">
+<span class="material-symbols-outlined text-[16px]">light_mode</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant" title="High Humidity">
+<span class="material-symbols-outlined text-[16px]">air</span>
+</div>
+</div>
+</div>
+<button class="w-full h-[48px] bg-primary-container text-on-primary font-label-md text-label-md rounded-DEFAULT hover:bg-primary transition-colors flex items-center justify-center">
+                            View Details
+                        </button>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT overflow-hidden group hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 flex flex-col h-full">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A mature, large Ficus Lyrata (Fiddle Leaf Fig) standing tall in a simple, elegant beige woven basket. The plant features huge, glossy, dark green violin-shaped leaves. It is placed in a minimalist, light-filled modern living space with pristine white walls and pale oak flooring. The image exudes a calming, sophisticated, and aspirational interior design aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-LXcNp2o-5j_EWr31Jat0qJ0prax2dbEFQD__mEuJ2fOlRG6ey4YkAnEg0tam8IZnaty55Pz0iJv5iBIqpu_H-7wrJqMTo7kZjOOi2HFzCsn2IhgRD3jZ9uRcYOVYJqEXzjdaqlaQ4Cb2vnaS--zbGvPuILUZb5ahUVaNIN-VBBf4jjRlk33087OnzqmmdQbkeOsFVF59UcNzLLcEiNTeb5fxaUuL2-wrOHNIe1OwSDrfoLjsTvbr"/>
+<div class="absolute top-2 left-2 flex gap-1">
+<span class="bg-tertiary/10 text-tertiary px-2 py-1 text-[10px] font-label-md uppercase tracking-wider rounded-DEFAULT backdrop-blur-sm">Large Specimen</span>
+</div>
+</div>
+<div class="p-stack-md flex flex-col flex-1 justify-between gap-stack-md">
+<div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-display text-headline-md text-on-background line-clamp-1">Fiddle Leaf Fig</h3>
+<span class="font-body-lg text-body-lg font-bold text-on-background">$285</span>
+</div>
+<p class="font-caption text-caption text-secondary italic">Ficus lyrata</p>
+<div class="flex gap-stack-sm mt-stack-sm">
+<div class="flex items-center gap-1 text-on-surface-variant" title="Bright Indirect Light">
+<span class="material-symbols-outlined text-[16px]">light_mode</span>
+</div>
+</div>
+</div>
+<button class="w-full h-[48px] bg-primary-container text-on-primary font-label-md text-label-md rounded-DEFAULT hover:bg-primary transition-colors flex items-center justify-center">
+                            View Details
+                        </button>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT overflow-hidden group hover:shadow-[0px_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300 flex flex-col h-full">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A trailing Anthurium Vittariifolium hanging elegantly from a matte black metal planter. The long, pendant-like dark green leaves cascade down dramatically. The background is a clean, textured warm white wall, providing a stark contrast to the slender, delicate foliage. Lighting is soft and directional, highlighting the unique shape and texture of this rare epiphytic plant." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFa6ZBZwdywL1fOGuG5SfhMEtoW3KA2ubzZFnVyFPZYSukr-ueNtK2USk7pdNPniysC-HeHmVg3ROGz6mon5DC1C20NtVRUl76lPAz92_1RduDPPA6YfRwyO3UsHQPghwnaizO5aE-JtPGAiFwnL4bn-QN5svGy3g2vPWs4wcqkPYgNFBjMw61-t_ltY_xkLwvFvdoiF2JAJZ_6M2kXC2tRSjBNP307Ma7cPzAbtFb2vlKnuq-twzL"/>
+</div>
+<div class="p-stack-md flex flex-col flex-1 justify-between gap-stack-md">
+<div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-display text-headline-md text-on-background line-clamp-1">Strap Leaf Anthurium</h3>
+<span class="font-body-lg text-body-lg font-bold text-on-background">$175</span>
+</div>
+<p class="font-caption text-caption text-secondary italic">Anthurium vittariifolium</p>
+<div class="flex gap-stack-sm mt-stack-sm">
+<div class="flex items-center gap-1 text-on-surface-variant" title="Medium Indirect Light">
+<span class="material-symbols-outlined text-[16px]">brightness_medium</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant" title="High Humidity">
+<span class="material-symbols-outlined text-[16px]">air</span>
+</div>
+</div>
+</div>
+<button class="w-full h-[48px] bg-primary-container text-on-primary font-label-md text-label-md rounded-DEFAULT hover:bg-primary transition-colors flex items-center justify-center">
+                            View Details
+                        </button>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-section-gap bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container font-body-md text-body-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div>
+<h3 class="font-display text-headline-md text-on-primary mb-stack-md">Verdant Grove</h3>
+<p class="text-on-primary/80">© 2024 Verdant Grove Wholesale &amp; Retail. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<a class="text-on-primary/80 hover:text-primary-fixed-dim transition-opacity" href="#">About Us</a>
+<a class="text-on-primary/80 hover:text-primary-fixed-dim transition-opacity" href="#">Sustainability</a>
+<a class="text-on-primary/80 hover:text-primary-fixed-dim transition-opacity" href="#">Shipping Policy</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<a class="text-on-primary/80 hover:text-primary-fixed-dim transition-opacity" href="#">Contract Services</a>
+<a class="text-on-primary/80 hover:text-primary-fixed-dim transition-opacity" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</div>
+<style>
+        /* Hide scrollbar for mobile horizontal nav */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>
